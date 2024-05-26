@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Viết một đoạn mã cho phép người dùng nhập vào 2 đại lượng là ngày sinh (date) và tháng sinh (month).
+        let ngay = parseInt(prompt('Mời bạn nhập ngày sinh:'));
+        let thang = parseInt(prompt('Mời bạn nhập tháng sinh:'));
+
+        switch (ngay, thang) {
+
+
+
+            case 1:
+                (ngay <= 19 && ngay > 0)
+                    ? alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung ma kết")
+                    : (ngay > 19 && ngay <= 31) ? alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung bảo bình")
+                        : alert("không có ngày mà bạn nhập");
+                break;
+            case 2:
+                (ngay <= 18 && ngay > 0)
+                    ? alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung bảo bình")
+                    : (ngay > 19 && ngay <= 29) ? alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung song ngư")
+                        : alert("không có ngày mà bạn nhập");
+                break;
+            case 3:
+                (ngay <= 20 && ngay > 0)
+                    ? alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung song ngư")
+                    : (ngay > 20 && ngay <= 31)
+                        ? alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung bạch dương")
+                        : alert("không có ngày mà bạn nhập")
+                break;
+
+
+            case 4:
+
+                if (ngay <= 19 && ngay > 0) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung bạch dương");
+                }
+                else if (ngay > 19 && ngay <= 30) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung kim ngưu");
+                }
+                else {
+                    alert("không có ngày mà bạn nhập");
+                } break;
+
+            case 5:
+                if (ngay <= 20 && ngay > 0) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung kim ngưu");
+                }
+                else if (ngay > 20 && ngay <= 31) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung song tử");
+                }
+                else {
+                    alert("không có ngày mà bạn nhập");
+                } break;
+
+
+            case 6:
+                if (ngay <= 21 && ngay > 0) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung song tử");
+                }
+                else if (ngay > 21 && ngay <= 30) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung cự giải");
+                }
+                else {
+                    alert("không có ngày mà bạn nhập");
+                } break;
+
+
+            case 7:
+                if (ngay <= 22 && ngay > 0) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung cự giải");
+                }
+                else if (ngay > 22 && ngay <= 31) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung sư tử");
+                }
+                else {
+                    alert("không có ngày mà bạn nhập");
+                } break;
+
+
+            case 8:
+                if (ngay <= 22 && ngay > 0) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung sư tử");
+                }
+                else if (ngay > 22 && ngay <= 31) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung sử nữ");
+                }
+                else {
+                    alert("không có ngày mà bạn nhập");
+                }
+                break;
+
+
+            case 9:
+                if (ngay <= 22 && ngay > 0) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung sử nữ");
+                }
+                else if (ngay > 22 && ngay <= 30) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung thiên bình");
+                }
+                else {
+                    alert("không có ngày mà bạn nhập");
+                } break;
+
+
+            case 10:
+                if (ngay <= 23 && ngay > 0) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung thiên bình");
+                }
+                else if (ngay > 23 && ngay <= 31) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung hổ cáp");
+                }
+                else {
+                    alert("không có ngày mà bạn nhập");
+                } break;
+
+
+            case 11:
+                if (ngay <= 21 && ngay > 0) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung hổ cáp");
+                }
+                else if (ngay > 21 && ngay <= 30) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung nhân mã");
+                }
+                else {
+                    alert("không có ngày mà bạn nhập");
+                } break;
+
+
+            case 12:
+                if (ngay <= 21 && ngay > 0) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung nhân mã");
+                }
+                else if (ngay > 21 && ngay <= 31) {
+                    alert("bạn sinh ngày " + ngay + " tháng " + thang + "\nbạn thuộc cung ma kết");
+                }
+                else {
+                    alert("không có ngày mà bạn nhập");
+                } break;
+
+            default: alert("nhập sai thông tin");
+                break;
+        }
+    </script>
+</body>
+
+</html>

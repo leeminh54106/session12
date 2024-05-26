@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Mời bạn nhập a:");
+        let b = +prompt("Mời bạn nhập b:");
+        let c = +prompt("Mời bạn nhập c:");
+        //Tìm số lớn nhất
+        let max = a;
+        
+        if (b > max) {
+            max = b;
+        }
+        if (c > max) {
+            max = c;
+        }
+        alert( `Số lớn nhất là: ${max}`);
+        //Tìm số nhỏ nhất
+        let min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min) {
+            min = c;
+        }
+        alert(`Số nhỏ nhất là:${min}`);
+    </script>
+</body>
+
+</html>

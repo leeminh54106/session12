@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Bai01 Viết chương trình nhập vào số tuổi của 1 người
+        //.Nếu số tuổi người đó >=18 tuổi , hiển thị thông báo trên 18 tuổi ngược lại bạn chưa đủ 18 tuổi!
+        let age = +prompt('Mời bạn nhập số tuổi của bạn:');
+        if (age >= 18) {
+            alert('Bạn đã đủ 18 tuổi');
+        } else {
+            alert('Bạn chưa đủ 18 tuổi');
+        }
+        //Viết chương trình cho phép người dùng nhập vào số giờ trong ngày.
+        let hour = +prompt('MỜi bạn nhập số giờ:');
+        if (hour < 18) {
+            alert('Chào buổi sáng mọi người');
+        }
+        else {
+            alert('Chào buổi chiều mọi người');
+        }
+
+        //Viết chương trình cho phép người dùng nhập vào số giờ trong ngày.
+        let gio = +prompt('MỜi bạn nhập số giờ trong ngay:');
+        if (gio < 10) {
+            alert('Chào buổi sáng mọi người');
+        }
+        else if (gio < 20) {
+            alert('Một ngày tốt lành');
+        }
+        else {
+            alert('Chào buổi chiều mọi người');
+        }
+        //Viết chương trình cho phép người dùng nhập vào 1 số.
+        let int = parseInt(prompt('Mời nhập số nguyên:'));
+        if (int % 2 == 0) {
+            alert('Số chẵn');
+        }
+        else {
+            alert('Số lẻ');
+        }
+        //Viết chương trình cho phép người dùng nhập vào 1 số. swicth case
+        let number = +prompt('Mời bạn nhập số nguyên:');
+        switch (number % 2) {
+            case 0:
+                alert('Tôi là số chẵn');
+                break;
+            case 1:
+                alert('Tôi là số lẻ');
+                break;
+        }
+
+        //Viết chương trình cho phép người dùng nhập màu vào kiểm tra.
+        let color = prompt('Mời bạn nhập màu:');
+        switch (color) {
+            case 'red':
+                alert('Màu đỏ');
+                break;
+            case 'blue':
+                alert('Màu xanh');
+                break;
+            case 'yellow':
+                alert('Màu vàng');
+                break;
+            default:
+                alert('Màu không hợp lệ');
+                break;
+        }
+
+        //Viết chương trình cho phép người dùng nhập vào số nguyên x:
+        let Intx = +prompt('Mời bạn nhập vào số nguyên x:');
+        if (Intx === 0) {
+            alert('c là số 0');
+        }
+        else if (Intx > 0) {
+            alert('c là số dương');
+        }
+        else {
+            alert('c là số âm');
+        }
+
+        //Viết chương trình cho phép người dùng nhập điểm các môn:Toán,Lí,Hoá,
+        //Văn, Sử , Địa (thang điểm 10);
+        let Toan = +prompt('Mời bạn nhập điểm Toán:');
+        let Li = +prompt('Mời bạn nhập điểm Lí:');
+        let Hoa = +prompt('Mời bạn nhập điểm Hoá:');
+        let Diem = (Toan + Li + Hoa) / 3;
+        if (8.0 <= Diem <= 10) {
+            alert('Xếp loại Giỏi');
+        }
+        else if (6.5 <= Diem < 7.9) {
+            alert('Xếp loại Khá');
+        }
+        else if (5.0 <= Diem < 6.4) {
+            alert('Xếp loại Trung bình');
+        }
+        else {
+            alert('Xếp loại Yếu');
+        }
+        //Viết chương trình nhập vào số tháng trong năm,in ra số ngày trong tháng đó.
+        let month = +prompt('Mời bạn nhập vào số tháng trong năm:');
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert('Tháng này có 31 ngày');
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert('Tháng này có 30 ngày');
+                break;
+            case 2:
+                alert('Tháng này có 28 hoặc 29 ngày');
+                break;
+            default:
+                alert('Tháng không hợp lệ');
+                break;
+        }
+    </script>
+</body>
+
+</html>
